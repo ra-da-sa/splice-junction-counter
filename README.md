@@ -4,7 +4,7 @@ This script processes mRNA sequencing alignments (.sam) to identify splice junct
 ## input
 This script takes two input files:
 1. .sam file containing aligned mRNA sequencing reads. The file should have the following SAM columns: Column 3 (RNAME): chromosome of the alignment, Column 4 (POS): leftmost alignment positionColumn 6 (CIGAR): CIGAR string describing the alignment, Last column (NH:i:x): number of alignment locations for the read
-3. Gene information file (.txt) containing gene IDs and their genomic coordinates.
+3. .txt file containing gene information. Thefile should have gene IDs and their genomic coordinates.
 
 ## usage
 The script is run using the following command format:
