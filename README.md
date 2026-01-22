@@ -3,15 +3,12 @@ This script processes mRNA sequencing alignments (.sam) to identify splice junct
 
 ## input
 This script takes two input files:
-1. .sam file containing aligned mRNA sequencing reads. The file should have the following SAM columns:
-   • Column 3 (RNAME): chromosome of the alignment
-   • Column 4 (POS): leftmost alignment position
-   • Column 6 (CIGAR): CIGAR string describing the alignment
-   • Last column (NH:i:x): number of alignment locations for the read
-2. Gene information file (.txt) containing gene IDs and their genomic coordinates.
+1. .sam file containing aligned mRNA sequencing reads. The file should have the following SAM columns: Column 3 (RNAME): chromosome of the alignment, Column 4 (POS): leftmost alignment positionColumn 6 (CIGAR): CIGAR string describing the alignment, Last column (NH:i:x): number of alignment locations for the read
+3. Gene information file (.txt) containing gene IDs and their genomic coordinates.
 
 ## usage
 The script is run using the following command format:
+
 python splice-junction-py <SamFile.sam> <GeneLocation_Summary.txt>
 
 ## output
