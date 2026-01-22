@@ -8,9 +8,9 @@ This script takes two input files:
 
 ## usage
 The script is run using the following command format:
-
+```
 python splice-junction-py <SamFile.sam> <GeneLocation_Summary.txt>
-
+```
 ## output
 The script produces a single output file called output.txt, which contains the following columns:
 1. Gene ID
